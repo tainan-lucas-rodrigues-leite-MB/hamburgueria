@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>figuras planas</title>
+        <meta http-equiv="Content-Text" content="text/html; charset UTF-8">
+        <script type="text/javascript">
+            function calculartriangulo(){
+                var b,h,triangulo;
+                b=document.calculos.base.value;
+                h=document.calculos.altura.value;
+                triangulo=(b*h)/2;
+                document.calculos.triangulo.value=triangulo;
+            }
+                function calcularquadrado(){
+                    var l1,quadrado;
+                    l1=document.calculos.lados.value;
+                    quadrado=(l1*l1);
+                    document.calculos.quadrado.value=quadrado;
+                }
+                function calcularretangulo(){
+                    var b2,h2,retangulo;
+                    b2=document.calculos.base2.value;
+                    h2=document.calculos.altura2.value;
+                    retangulo=(b2*h2);
+                    document.calculos.retangulo.value=retangulo;
+                }
+                function calculartrapezio(){
+                    var B,b3,h3,trapezio;
+                    B=document.calculos.baseMaior.value;
+                    b3=document.calculos.baseMenor.value;
+                    h3=document.calculos.altura3.value;
+                    trapezio=((parseInt(B)+parseInt(b3))*h3)/2;
+                    document.calculos.trapezio.value=trapezio;
+                }
+                function calcularcirculo(){
+                    var r,circulo;
+                    r=document.calculos.raio.value;
+                    circulo=3.14*r*r;
+                    document.calculos.circulo.value=circulo;
+                }
+                </script>
+                </head>
+                <body bgcolor="gray">
+                    <h1> A area do triangulo</h1>
+                    <form name="calculos">
+                        <table align="center">
+                            <tr>
+                                <td><label>Informe a base:</label></td>
+                                <td><input type="text" name="base" value="" size="10"></td><br>
+                            </tr>
+                            <tr>
+                                <td><label>Informe a altura:</label></td>
+                                <td><input type="text" name="altura" value="" size="10"></td><br>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center"><input type="button" name="bt1" value="Calcule" onclick="calculartriangulo();"></td><br>
+                            </tr>
+                        </table>
+                        <table align="center">
+                            
+                        <tr>
+                            <td><label><b>A area do triangulo é:</b></label></td>
+                            <td><input type="text" name="triangulo" value="" size="10"></td><br></tr></table>
+                            <hr>
+                            <table align="center">
+                                <h1>Area do quadrado</h1>
+                                <form name="calculos">
+                                    <table align="center">
+                                        <tr>
+                                            <td><label>Informe o valor dos lados:</label></td>
+                                            <td><input type="text" name="lados" value="" size="10"></td><br></tr>
+                                            <tr>
+                                                <td colspan="2" align="center"><input type="button" name="bt2" value="Calcule" onclick="calcularquadrado();"></td><br>
+                                            </tr>
+                                    </table>
+                                   
+                                    <table align="center">
+                                        <tr>
+                                            <td><label><b>A area do quadrado é:</b></label></td>
+                                            <td><input type="text" name="quadrado" value="" size="10"></td><br></tr></table>
+                                            <hr>
+                            <table align="center">
+                                            <h1>Area do retangulo</h1>
+                                            <form name="calculos">
+                                                <table align="center">
+                                                <tr>   
+                                                    <td><label>Informe o valor da base:</label></td>
+                                                    <td><input type="text" name="base2" value="" size="10"></td><br>
+                                                </tr>
+                                                <tr>
+                                                    <td><label>Informe o valor da altura:</label></td>
+                                                    <td><input type="text" name="altura2" value="" size="10"></td><br>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" align="center"><input type="button" name="bt3" value="Calcule" onclick="calcularretangulo();"></td><br>
+                                                </tr>
+                                                </table>
+                                                <div style="border: 1 px solid black;"></div>
+                                                <table align="center">
+                                                    <tr>
+                                                        <td><label><b>A area do retangulo é:</b></label></td>
+                                                        <td><input type="text" name="retangulo" value="" size="10"></td><br></tr></table>
+                                                        <hr>
+                            <table align="center">
+                                                        <h1>Area do trapezio</h1>
+                                                        <form name="calculos">
+                                                            <table align="center">
+                                                                <tr>
+                                                                    <td><label>Informe a Base Maior:</label></td>
+                                                                    <td><input type="text" name="baseMaior" value="" size="10"></td><br>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><label>Informe a base menor:</label></td>
+                                                    <td><input type="text" name="baseMenor" value="" size="10"></td><br>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><label>Informe a altura:</label></td>
+                                                                    <td><input type="text" name="altura3" value="" size="10"></td><br>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" align="center"><input type="button" name="bt4" value="Calcule" onclick="calculartrapezio();"></td><br>
+                                                                </tr>
+                                                            </table>
+                                                            <div style="border: 1 px solid black;"></div>
+                                                            <table align="center">
+                                                                <tr>
+                                                                    <td><label><b>A area do trapezio é:</b></label></td>
+                                                                <td><input type="text" name="trapezio" value="" size="10"></td><br></tr></table>
+                                                                <hr>
+                            <table align="center">
+                                                                <h1>Area do circulo</h1>
+                                                        <form name="calculos">
+                                                            <table align="center">
+                                                                <tr>
+                                                                   <td><label>Informe o raio:</label></td>
+                                                                   <td><input type="text" name="raio" value="" size="10"></td><br>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" align="center"><input type="button" name="bt5" value="Calcule" onclick="calcularcirculo();"></td><br>
+                                                                </tr>
+                                                            </table>
+                                                            
+                                                                <table align="center">
+                                                                    <tr>
+                                                                        <td><label><b>A area do circulo é:</b></label></td>
+                                                                    <td><input type="text" name="circulo" value="" size="10"></td><br></tr></table>
+                                                                    </table>
+                                                                </div>
+                                                        </form>
+                                                    </body>
+</html>
+
+                                                        
+                            
+                            
+                                                        
+                                                                
+                                                            
+                                                        
+                                                    
+
+
+                                                                
+
+                                                            
+
+
+                                            
+
+                                        
+
+
+                                
+                            
+
+
+
+
+
+
+
+            
+                
+
+

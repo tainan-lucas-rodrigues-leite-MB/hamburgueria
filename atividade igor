@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Produto</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function calcular(){
+                var produto1;
+                var produto2;
+                var produto3;
+                var produto4;
+                var produto5;
+                var produto6;
+                var produto7;
+                var produto8;
+                var produto9;
+                var produto10;
+                var soma;
+                produto1=document.calculos.produto1.value;
+                produto2=document.calculos.produto2.value;
+                produto3=document.calculos.produto3.value;
+                produto4=document.calculos.produto4.value;
+                produto5=document.calculos.produto5.value;
+                produto6=document.calculos.produto6.value;
+                produto7=document.calculos.produto7.value;
+                produto8=document.calculos.produto8.value;
+                produto9=document.calculos.produto9.value;
+                produto10=document.calculos.produto10.value;
+                soma= produto1+produto2+produto3+produto4+produto5+produto6+produto7+produto8+produto9+produto10;
+                document.calculos.resultados.value=soma;
+            }
+            </script>
+    </head>
+    <body>
+        <form name="calculos">
+            <table align="center">
+                <tr>
+                    <td><label> Informe o valor do produto1:</label></td>
+                    <td><input type="text" name="1" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto2:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto3:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto4:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto5:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto6:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto7:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto8:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto9:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Informe o valor do produto10:</label></td>
+                    <td><input type="text" name="2" value="" size="10"><br></td>
+                </tr>
+                <td>colspan="2" align="center"><input type="button" name="bt" value="calcule" onclick="calcular"();">
+                    <br>
+                </td>
+            </tr>
+            </table>
+            <br>
+            <div style="border: 1px solid black">
+                <table align="center">
+                    <tr>
+                        <td><label><b>resultado</b></label></td>
+                        <td><input type="text" name="produtos" value="" size="10"><br></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>
+
+            
+                
+
+

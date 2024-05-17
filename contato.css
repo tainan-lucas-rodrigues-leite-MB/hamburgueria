@@ -1,0 +1,12 @@
+h1{
+    font-family:arial;
+    font-weight:400;
+    font-variant:small-caps;
+}
+P{
+    font-family: verdana;
+    text-indent: 6px;
+    font-weight: 700;
+    word-spacing: 4px;
+    letter-spacing: 5px;
+}

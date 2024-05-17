@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Hamburgueria</title>
+    </head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript">
+        function calcular(){
+            var sanduiche;
+            var cocacola;
+            var batatafrita;
+            var cachorroquente;
+            var bacon;
+            var xtudo;
+            var soma;
+            sanduiche=document.calculos.sanduiche.value;
+            cocacola=document.calculos.cocacola.value;
+            batatafrita=document.calculos.batatafrita.value;
+            cachorroquente=document.calculos.cachorroquente.value;
+            bacon=document.calculos.bacon.value;
+            xtudo=document.calculos.bacon.value;
+            xsalada=document.calculos.xsalada.value;
+            soma=(parseInt(sanduiche)*15)+(parseInt(cocacola)*6)+(parseInt(batatafrita)*8)+(parseInt(cachorroquente)*7)+(parseInt(bacon)*9)+(parseInt(xtudo)*20)+(parseInt(xsalada)*17);
+            document.calculos.resultados.value=soma;
+        }
+    </script>
+</head>
+<body>
+    <img src="hamburguer.jpg" width="300" height="300">   
+    <form name="calculos">
+        <table align="center">
+            <tr>
+                <td><label>Sanduiche=R$15:</label></td>
+                <td><input type="text" name="sanduiche" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <img src="coca cola.webp" width="300" height="200">
+            <td><label>Coca cola=R$6:</label></td>
+            <td><input type="text" name="cocacola" value="" size="10"><br></td>
+        </tr>
+        <tr>
+            <img src="batata frita.jpg" width="300" height="200">
+            <td><label>Batata frita=R$8:</label></td>
+            <td><input type="text" name="batatafrita" value="" size="10"><br></td>
+        </tr>
+        <tr>
+            <img src="cachorro quente.webp" width="300" height="200">
+            <td><label>Cachorro quente=R$7:</label></td>
+            <td><input type="text" name="cachorroquente" value="" size="10"><br></td>
+        </tr>
+        <tr>
+            <img src="bacon.png" width="300" height="200">
+            <td><label>Bacon=R$9:</label></td>
+            <td><input type="text" name="bacon" value="" size="10"><br></td>
+            </tr>
+            <tr>
+            <td><label>Xtudo=R$20:</label></td>
+            <td><input type="text" name="xtudo" value="" size="10"><br></td>
+            </tr>
+            <tr>
+            <td><label>Xsalada=R$17:</label></td>
+            <td><input type="text" name="xsalada" value="" size="10"><br></td>
+            </tr>
+        <td colspan="2" align="center"><input type="button" name="bt" value= "Calcule" onclick="calcular();">
+            <br>
+        </td>
+        </tr>
+        </table>
+        <br>
+        <div style="border:1 px solid black">
+            <table align="center">
+            <tr>
+                <td><label><b>resultados</b></label></td>
+                <td><input type="text" name="resultados" value="" size="10"><br></td>
+            </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+            
+
+
+    

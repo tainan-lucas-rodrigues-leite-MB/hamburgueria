@@ -1,0 +1,44 @@
+.caixa1{
+    position: fixed;
+    background-color: brown;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    
+
+}
+.caixa2{
+    position: fixed;
+    background-color: green;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+   
+
+
+    
+}
+.caixa3{
+    position: fixed;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    left:0;
+    top:0;
+  
+    
+}
+.caixa4{
+    position: fixed;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top:0;
+    width: 100px;
+
+
+  
+}
